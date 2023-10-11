@@ -12,7 +12,7 @@ const TodoItem = () => {
         tasks.map((task, index) => (
           <S.StyledDiv key={index}>
             <S.StyledInput
-              placeholder={task.name}
+              value={task.name}
               disabled
               isCompleted={task.isCompleted}
             />
