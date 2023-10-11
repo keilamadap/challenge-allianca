@@ -24,7 +24,7 @@ git clone https://github.com/keilamadap/challenge-allianca.git
 2. Entre no diretorio
 
 ```shell
-cd Web
+cd challenge-allianca
 ```
 
 3. Instale as dependências usando npm
