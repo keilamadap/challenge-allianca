@@ -15,7 +15,7 @@ function MyContextProvider({ children }) {
   }, []);
 
   const onAddTask = (taskName, isCompleted = false) => {
-    const newTask = { nome: taskName, isCompleted };
+    const newTask = { name: taskName, isCompleted };
     setTasks((prevTasks) => {
       const updatedTasks = [...prevTasks, newTask];
       localStorage.setItem("tasks", JSON.stringify(updatedTasks));

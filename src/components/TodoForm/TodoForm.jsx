@@ -22,7 +22,7 @@ const TodoForm = () => {
 
   return (
     <>
-      <S.TodoFormContainer>
+      <S.TodoForm>
         <S.StyledInput
           placeholder="Escreva uma tarefa..."
           value={taskInput}
@@ -33,11 +33,14 @@ const TodoForm = () => {
           icon="ph:plus-fill"
           width="55"
           height="55"
+          color="#313131"
           style={{ cursor: "pointer" }}
           onClick={handleAddTask}
         />
-      </S.TodoFormContainer>
-      <S.Paragraph> {error && error}</S.Paragraph>
+      </S.TodoForm>
+      <S.Box>
+        <S.Paragraph> {error && error}</S.Paragraph>
+      </S.Box>
     </>
   );
 };

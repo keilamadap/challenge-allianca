@@ -6,17 +6,13 @@ import { MyContext } from "../../context/MyContext";
 const TodoItem = () => {
   const { tasks, onRemoveTask, onMarkTaskCompleted } = useContext(MyContext);
 
-  useEffect(() => {
-    console.debug("tasks:", tasks);
-  }, [tasks]);
-
   return (
     <S.TodoItemContainer>
       {tasks &&
         tasks.map((task, index) => (
           <S.StyledDiv key={index}>
             <S.StyledInput
-              placeholder={task.nome}
+              placeholder={task.name}
               disabled
               isCompleted={task.isCompleted}
             />
