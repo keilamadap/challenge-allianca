@@ -5,6 +5,7 @@ import { MyContext } from "../../context/MyContext";
 
 const TodoItem = () => {
   const { tasks, onRemoveTask, onMarkTaskCompleted } = useContext(MyContext);
+
   useEffect(() => {
     console.debug("tasks:", tasks);
   }, [tasks]);
@@ -20,15 +21,17 @@ const TodoItem = () => {
               isCompleted={task.isCompleted}
             />
             <Icon
-              icon="icons8:checked"
-              width="50"
-              height="50"
+              icon="fluent-mdl2:completed-solid"
+              color={task.isCompleted ? "green" : "gray"}
+              width="40"
+              height="40"
               onClick={() => onMarkTaskCompleted(index)}
             />
             <Icon
               icon="fluent:delete-24-regular"
-              width="50"
-              height="50"
+              width="40"
+              color="red"
+              height="40"
               onClick={() => onRemoveTask(index)}
             />
           </S.StyledDiv>

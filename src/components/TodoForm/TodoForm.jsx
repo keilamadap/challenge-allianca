@@ -37,7 +37,7 @@ const TodoForm = () => {
           onClick={handleAddTask}
         />
       </S.TodoFormContainer>
-      <S.StyledParagraph> {error && error}</S.StyledParagraph>
+      <S.Paragraph> {error && error}</S.Paragraph>
     </>
   );
 };
