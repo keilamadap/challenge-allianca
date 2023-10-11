@@ -4,11 +4,8 @@ export const TodoItemContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  /* height: auto; */
   justify-content: center;
   align-items: center;
-  padding: 15px 20px 50px 20px;
-
   gap: 10px;
 `;
 
@@ -17,10 +14,9 @@ export const StyledInput = styled.input`
   background-color: #fff;
   width: 100%;
   height: 40px;
-  font-size: 16px;
+  font-size: 15px;
   border: 1px solid #780482;
-  color: #000047;
-
+  font-weight: 600;
   border-radius: 6px;
   font-family: Quicksand;
 

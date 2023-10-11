@@ -1,5 +1,5 @@
 export const todos = [
-  { nome: "Lavar louça", isCompleted: false },
-  { nome: "Fazer as compras", isCompleted: true },
-  { nome: "Limpar a casa", isCompleted: false },
+  { name: "Lavar louça", isCompleted: false },
+  { name: "Fazer as compras", isCompleted: true },
+  { name: "Limpar a casa", isCompleted: false },
 ];

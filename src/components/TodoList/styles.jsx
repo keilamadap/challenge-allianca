@@ -3,20 +3,23 @@ import styled from "styled-components";
 export const TodoListContainer = styled.div`
   display: flex;
   flex-direction: column;
-  width: 300px;
-  height: auto;
+  border: 2px solid black;
+  /* width: 360px; */
+  height: 100%;
   /* gap: 10px; */
   align-items: center;
-  padding: 0px 20px 20px 20px;
-  background-color: #dcdcdc;
-  border-radius: 6px;
+  padding: 20px;
+  background-color: #d2d2d2;
+  border-radius: 10px;
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 35px;
-  font-family: Quicksand;
+  font-weight: 600;
+  color: #313131;
 `;
 
 export const Paragraph = styled.p`
   font-size: 18px;
+  font-weight: 600;
 `;

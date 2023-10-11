@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TodoFormContainer = styled.div`
+export const TodoForm = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
@@ -24,9 +24,15 @@ export const StyledInput = styled.input`
   width: 100%;
 `;
 
-export const Paragraph = styled.span`
+export const Paragraph = styled.p`
   font-size: 18px;
-  margin-top: -10px;
   font-weight: bold;
   color: red;
+`;
+
+export const Box = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+  padding-bottom: 5px;
 `;
