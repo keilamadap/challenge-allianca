@@ -11,7 +11,11 @@ const TodoList = () => {
     <S.TodoListContainer>
       <S.Title>To Do List</S.Title>
       <TodoForm />
-      {tasks?.length ? <TodoItem /> : <p>Sem tarefas por enquanto!</p>}
+      {tasks?.length > 0 ? (
+        <TodoItem />
+      ) : (
+        <S.Paragraph>Sem tarefas por enquanto!</S.Paragraph>
+      )}
     </S.TodoListContainer>
   );
 };
