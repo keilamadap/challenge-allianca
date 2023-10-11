@@ -7,6 +7,7 @@ export const TodoFormContainer = styled.div`
   height: auto;
   align-items: center;
   padding: 20px;
+  gap: 5px;
 `;
 
 export const StyledInput = styled.input`
@@ -23,7 +24,8 @@ export const StyledInput = styled.input`
   width: 100%;
 `;
 
-export const StyledParagraph = styled.span`
+export const Paragraph = styled.span`
+  font-size: 18px;
   margin-top: -10px;
   font-weight: bold;
   color: red;

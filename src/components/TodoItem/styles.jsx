@@ -7,7 +7,7 @@ export const TodoItemContainer = styled.div`
   /* height: auto; */
   justify-content: center;
   align-items: center;
-  padding: 20px;
+  padding: 15px 20px 50px 20px;
 
   gap: 10px;
 `;
@@ -24,13 +24,14 @@ export const StyledInput = styled.input`
   border-radius: 6px;
   font-family: Quicksand;
 
-  /* Estilos condicionais para tarefas concluídas */
   ${(props) =>
     props.isCompleted &&
     `
     text-decoration: line-through;
+    text-decoration-color: green;
+    text-decoration-thickness: 2px;
     color: #888;
-  `}/* Outros estilos comuns ao StyledDiv */
+  `}
 `;
 
 export const StyledDiv = styled.div`
