@@ -16,15 +16,15 @@ function MyContextProvider({ children }) {
 
   const onAddTask = (taskName, isCompleted = false) => {
     const newTask = { name: taskName, isCompleted };
-    setTasks((prevTasks) => {
-      const updatedTasks = [...prevTasks, newTask];
+    setTasks((old) => {
+      const updatedTasks = [...old, newTask];
       localStorage.setItem("tasks", JSON.stringify(updatedTasks));
       return updatedTasks;
     });
   };
   const onRemoveTask = (index) => {
-    setTasks((prevTasks) => {
-      const updatedTasks = prevTasks.filter((_, i) => i !== index);
+    setTasks((old) => {
+      const updatedTasks = old.filter((_, i) => i !== index);
       localStorage.setItem("tasks", JSON.stringify(updatedTasks));
       return updatedTasks;
     });

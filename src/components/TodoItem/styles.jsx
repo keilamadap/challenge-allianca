@@ -23,6 +23,7 @@ export const StyledInput = styled.input`
   ${(props) =>
     props.isCompleted &&
     `
+    background-color: #EAFFF1;
     text-decoration: line-through;
     text-decoration-color: green;
     text-decoration-thickness: 2px;
