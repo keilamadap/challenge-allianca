@@ -21,6 +21,7 @@ export const Title = styled.h2`
 
 export const Paragraph = styled.p`
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   flex-direction: column-reverse;
