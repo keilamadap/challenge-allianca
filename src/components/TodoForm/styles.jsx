@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const TodoForm = styled.div`
+export const Form = styled.form`
   display: flex;
   justify-content: center;
   width: 100%;
+  flex-direction: column;
   height: auto;
   align-items: center;
   padding: 20px;
-  gap: 5px;
+  /* gap: 5px; */
 `;
 
 export const StyledInput = styled.input`
@@ -24,15 +25,39 @@ export const StyledInput = styled.input`
   width: 100%;
 `;
 
-export const Paragraph = styled.p`
-  font-size: 18px;
-  font-weight: bold;
-  color: red;
-`;
-
-export const Box = styled.div`
+export const StyledDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-top: -20px;
+  margin-bottom: -14px;
   padding-bottom: 5px;
+`;
+
+export const StyledButton = styled.button`
+  border: none;
+  background-color: transparent;
+`;
+
+export const Div = styled.div`
+  display: flex;
+  align-items: center;
+  width: 100%;
+`;
+
+export const Label = styled.label`
+  margin-bottom: 10px;
+  font-weight: 500;
+`;
+
+export const Error = styled.p`
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: red;
+  font-weight: 600;
+`;
+
+export const Success = styled.p`
+  font-size: 18px;
+  margin-bottom: 5px;
+  color: green;
+  font-weight: 600;
 `;

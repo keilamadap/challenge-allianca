@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TodoListContainer = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -20,6 +20,10 @@ export const Title = styled.h2`
 `;
 
 export const Paragraph = styled.p`
-  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column-reverse;
+  font-size: 15px;
   font-weight: 600;
 `;
