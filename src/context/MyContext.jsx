@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 
 const todos = [
   {
-    name: "Lavar a louça =(",
+    name: "Lavar a louça",
     id: uuidv4(),
     isCompleted: false,
   },
@@ -25,8 +25,6 @@ function MyContextProvider({ children }) {
   const [tasks, setTasks] = useState(todos);
 
   useEffect(() => {
-    console.log(todos);
-
     const storedTasks = localStorage.getItem("tasks");
     if (storedTasks) {
       const parsedTasks = JSON.parse(storedTasks);

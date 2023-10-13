@@ -7,8 +7,7 @@ export const Form = styled.form`
   flex-direction: column;
   height: auto;
   align-items: center;
-  padding: 20px;
-  /* gap: 5px; */
+  padding: 10px 0px 10px 0px;
 `;
 
 export const StyledInput = styled.input`
@@ -25,7 +24,7 @@ export const StyledInput = styled.input`
   width: 100%;
 `;
 
-export const StyledDiv = styled.div`
+export const StyledMessageDiv = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: -14px;
@@ -40,7 +39,8 @@ export const StyledButton = styled.button`
 export const Div = styled.div`
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100%;,
+    flex-direction: column;
 `;
 
 export const Label = styled.label`
@@ -50,14 +50,14 @@ export const Label = styled.label`
 
 export const Error = styled.p`
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: red;
   font-weight: 600;
 `;
 
 export const Success = styled.p`
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
   color: green;
   font-weight: 600;
 `;

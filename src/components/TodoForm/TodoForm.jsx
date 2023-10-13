@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import * as S from "./styles";
 import { Icon } from "@iconify/react";
 import { MyContext } from "../../context/MyContext";
@@ -50,14 +50,14 @@ const TodoForm = () => {
         </S.StyledButton>
       </S.Div>
 
-      <S.StyledDiv>
+      <S.StyledMessageDiv>
         {message &&
           (isSuccess ? (
             <S.Success>{message}</S.Success>
           ) : (
             <S.Error>{message}</S.Error>
           ))}
-      </S.StyledDiv>
+      </S.StyledMessageDiv>
     </S.Form>
   );
 };
