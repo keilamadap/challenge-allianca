@@ -21,7 +21,7 @@ export const StyledInput = styled.input`
   font-family: Quicksand;
 
   ${(props) =>
-    props.isCompleted &&
+    props.iscompleted &&
     `
     background-color: #EAFFF1;
     text-decoration: line-through;
@@ -38,4 +38,8 @@ export const StyledDiv = styled.div`
   gap: 10px;
   justify-content: center;
   cursor: pointer;
+`;
+
+export const StyledParagraph = styled.p`
+  font-weight: 500;
 `;
