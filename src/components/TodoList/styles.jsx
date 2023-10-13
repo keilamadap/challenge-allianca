@@ -14,6 +14,10 @@ export const Container = styled.div`
   -webkit-box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
   -moz-box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
   box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
+
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 `;
 
 export const Title = styled.h2`
