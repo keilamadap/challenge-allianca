@@ -24,14 +24,6 @@ const MyContext = createContext();
 function MyContextProvider({ children }) {
   const [tasks, setTasks] = useState(todos);
 
-  useEffect(() => {
-    const storedTasks = localStorage.getItem("tasks");
-    if (storedTasks) {
-      const parsedTasks = JSON.parse(storedTasks);
-      setTasks(parsedTasks);
-    }
-  }, []);
-
   const onAddTask = (taskName, isCompleted = false) => {
     const newTask = { id: uuidv4(), name: taskName, isCompleted };
     setTasks((old) => {
@@ -57,6 +49,13 @@ function MyContextProvider({ children }) {
     setTasks(markedTasks);
     localStorage.setItem("tasks", JSON.stringify(markedTasks));
   };
+  useEffect(() => {
+    const storedTasks = localStorage.getItem("tasks");
+    if (storedTasks) {
+      const parsedTasks = JSON.parse(storedTasks);
+      setTasks(parsedTasks);
+    }
+  }, []);
 
   return (
     <MyContext.Provider
