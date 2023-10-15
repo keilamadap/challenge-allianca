@@ -11,6 +11,7 @@ export const Container = styled.div`
   padding: 20px;
   background-color: #cccccc;
   border-radius: 8px;
+  gap: 5px;
   -webkit-box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
   -moz-box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
   box-shadow: 7px 5px 22px -5px rgba(15, 1, 15, 1);
@@ -34,7 +35,17 @@ export const Paragraph = styled.p`
   width: 100%;
   align-items: center;
   gap: 10px;
+  padding: 10px;
   flex-direction: column-reverse;
   font-size: 15px;
   font-weight: 600;
+`;
+
+export const StyledParagraph = styled.p`
+  font-weight: 600;
+  justify-content: start;
+  display: flex;
+  font-size: 14px;
+  width: 100%;
+  padding: 5px;
 `;

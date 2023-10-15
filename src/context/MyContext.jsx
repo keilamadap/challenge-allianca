@@ -5,12 +5,12 @@ const todos = [
   {
     name: "Lavar a louça",
     id: uuidv4(),
-    isCompleted: false,
+    isCompleted: true,
   },
   {
-    name: "Fazer as compras",
+    name: "Passear com o cachorro",
     id: uuidv4(),
-    isCompleted: true,
+    isCompleted: false,
   },
   {
     name: "Estudar",

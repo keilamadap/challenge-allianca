@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  flex-direction: column;
   width: 100%;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
+  justify-content: center;
+  cursor: pointer;
 `;
 
 export const StyledInput = styled.input`
@@ -29,20 +29,4 @@ export const StyledInput = styled.input`
     text-decoration-thickness: 2px;
     color: #888;
   `}
-`;
-
-export const StyledDiv = styled.div`
-  display: flex;
-  width: 100%;
-  align-items: center;
-  gap: 10px;
-  justify-content: center;
-  cursor: pointer;
-`;
-
-export const StyledParagraph = styled.p`
-  font-weight: 500;
-  justify-content: start;
-  display: flex;
-  width: 100%;
 `;

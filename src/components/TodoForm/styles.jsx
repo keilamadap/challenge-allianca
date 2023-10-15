@@ -7,7 +7,6 @@ export const Form = styled.form`
   flex-direction: column;
   height: auto;
   align-items: center;
-  padding: 10px 0px 10px 0px;
 `;
 
 export const StyledInput = styled.input`
@@ -26,9 +25,9 @@ export const StyledInput = styled.input`
 
 export const StyledMessageDiv = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
+  padding-top: 10px;
+  width: 100%;
 `;
 
 export const StyledButton = styled.button`
@@ -58,22 +57,19 @@ export const StyledButton = styled.button`
 export const Div = styled.div`
   display: flex;
   gap: 10px;
-
   align-items: center;
   width: 100%;,
-    flex-direction: column;
+  flex-direction: column;
 `;
 
-export const Error = styled.p`
+export const Error = styled.span`
   font-size: 15px;
-  margin-top: 8px;
   color: red;
   font-weight: 600;
 `;
 
-export const Success = styled.p`
+export const Success = styled.span`
   font-size: 15px;
-  margin-top: 8px;
   color: green;
   font-weight: 600;
 `;
