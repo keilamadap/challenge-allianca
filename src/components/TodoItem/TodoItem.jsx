@@ -37,7 +37,11 @@ const TodoItem = () => {
             </S.StyledDiv>
           ))}
       {completedTasks[0] && (
-        <S.StyledParagraph>Tarefas concluídas:</S.StyledParagraph>
+        <S.StyledParagraph>
+          {completedTasks.length > 1
+            ? `${completedTasks.length} tarefas concluídas:`
+            : `${completedTasks.length} tarefa concluída:`}{" "}
+        </S.StyledParagraph>
       )}
       {completedTasks.sort().map((completed) => (
         <S.StyledDiv key={completed.id}>
