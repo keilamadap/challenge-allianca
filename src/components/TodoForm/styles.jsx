@@ -19,7 +19,7 @@ export const StyledInput = styled.input`
   font-weight: 800;
   font-family: Quicksand;
   outline: none;
-  border-radius: 6px;
+  border-radius: 4px;
   height: 40px;
   width: 100%;
 `;
@@ -27,37 +27,53 @@ export const StyledInput = styled.input`
 export const StyledMessageDiv = styled.div`
   display: flex;
   flex-direction: column;
-  margin-bottom: -14px;
-  padding-bottom: 5px;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const StyledButton = styled.button`
-  border: none;
-  background-color: transparent;
+  border: 2px solid #6e38a1;
+  height: 40px;
+  border-radius: 4px;
+  width: 115px;
+  font-family: Quicksand;
+  font-size: 12px;
+  outline: none;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #914bd4;
+  transition: 0.25s;
+  -webkit-box-shadow: 5px 7px 5px 0px rgba(173, 173, 173, 1);
+  -moz-box-shadow: 5px 7px 5px 0px rgba(173, 173, 173, 1);
+  box-shadow: 5px 4px 5px 0px rgba(173, 173, 173, 1);
+
+  &: hover {
+    background-color: #61328e;
+    border: 2px solid #914bd4;
+    color: #fff;
+  }
 `;
 
 export const Div = styled.div`
   display: flex;
+  gap: 10px;
+
   align-items: center;
   width: 100%;,
     flex-direction: column;
 `;
 
-export const Label = styled.label`
-  margin-bottom: 10px;
-  font-weight: 500;
-`;
-
 export const Error = styled.p`
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-top: 8px;
   color: red;
   font-weight: 600;
 `;
 
 export const Success = styled.p`
-  font-size: 18px;
-  margin-bottom: 8px;
+  font-size: 15px;
+  margin-top: 8px;
   color: green;
   font-weight: 600;
 `;

@@ -11,8 +11,8 @@ const TodoList = () => {
   return (
     <S.Container>
       <S.Title>To Do List</S.Title>
-
       <TodoForm />
+
       {tasks?.length > 0 ? (
         <TodoItem />
       ) : (

@@ -17,13 +17,13 @@ export const StyledInput = styled.input`
   font-size: 15px;
   border: 1px solid #780482;
   font-weight: 600;
-  border-radius: 6px;
+  border-radius: 4px;
   font-family: Quicksand;
 
   ${(props) =>
     props.iscompleted &&
     `
-    background-color: #EAFFF1;
+    background-color: #98FB98;
     text-decoration: line-through;
     text-decoration-color: green;
     text-decoration-thickness: 2px;
@@ -42,4 +42,7 @@ export const StyledDiv = styled.div`
 
 export const StyledParagraph = styled.p`
   font-weight: 500;
+  justify-content: start;
+  display: flex;
+  width: 100%;
 `;

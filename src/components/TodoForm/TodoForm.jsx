@@ -1,6 +1,5 @@
 import { useContext, useState } from "react";
 import * as S from "./styles";
-import { Icon } from "@iconify/react";
 import { MyContext } from "../../context/MyContext";
 
 const TodoForm = () => {
@@ -14,11 +13,11 @@ const TodoForm = () => {
     if (taskInput.trim() !== "") {
       onAddTask(taskInput, false);
       setTaskInput("");
-      setMessage("Tarefa adicionada!");
+      setMessage("Tarefa adicionada");
       setIsSuccess(true);
       clearTimeout();
     } else {
-      setMessage("Insira uma tarefa!");
+      setMessage("Insira uma tarefa");
       setIsSuccess(false);
       clearTimeout();
     }
@@ -32,22 +31,14 @@ const TodoForm = () => {
 
   return (
     <S.Form onSubmit={handleSubmit}>
-      <S.Label>Quais as tarefas para hoje?</S.Label>
       <S.Div>
         <S.StyledInput
+          autoFocus
           placeholder="Escreva uma tarefa..."
           value={taskInput}
           onChange={(e) => setTaskInput(e.target.value)}
         />
-        <S.StyledButton type="submit">
-          <Icon
-            icon="ph:plus-fill"
-            width="55"
-            height="55"
-            color="#313131"
-            style={{ cursor: "pointer" }}
-          />
-        </S.StyledButton>
+        <S.StyledButton type="submit">Nova Tarefa</S.StyledButton>
       </S.Div>
 
       <S.StyledMessageDiv>
