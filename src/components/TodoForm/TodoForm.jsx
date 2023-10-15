@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { MyContext } from "../../context/MyContext";
 
 const TodoForm = () => {
-  const { onAddTask, setTasks } = useContext(MyContext);
+  const { onAddTask } = useContext(MyContext);
   const [taskInput, setTaskInput] = useState("");
   const [message, setMessage] = useState(null);
   const [isSuccess, setIsSuccess] = useState(false);
@@ -41,14 +41,12 @@ const TodoForm = () => {
         <S.StyledButton type="submit">Nova Tarefa</S.StyledButton>
       </S.Div>
 
-      <S.StyledMessageDiv>
-        {message &&
-          (isSuccess ? (
-            <S.Success>{message}</S.Success>
-          ) : (
-            <S.Error>{message}</S.Error>
-          ))}
-      </S.StyledMessageDiv>
+      {message &&
+        (isSuccess ? (
+          <S.Success>{message}</S.Success>
+        ) : (
+          <S.Error>{message}</S.Error>
+        ))}
     </S.Form>
   );
 };

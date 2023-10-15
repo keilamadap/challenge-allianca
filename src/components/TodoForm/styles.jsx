@@ -23,13 +23,6 @@ export const StyledInput = styled.input`
   width: 100%;
 `;
 
-export const StyledMessageDiv = styled.div`
-  display: flex;
-  justify-content: center;
-  padding-top: 10px;
-  width: 100%;
-`;
-
 export const StyledButton = styled.button`
   border: 2px solid #6e38a1;
   height: 40px;
@@ -65,11 +58,13 @@ export const Div = styled.div`
 export const Error = styled.span`
   font-size: 15px;
   color: red;
+  margin-top: 10px;
   font-weight: 600;
 `;
 
 export const Success = styled.span`
   font-size: 15px;
   color: green;
+  margin-top: 10px;
   font-weight: 600;
 `;

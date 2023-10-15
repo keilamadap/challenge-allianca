@@ -21,7 +21,7 @@ export const StyledInput = styled.input`
   font-family: Quicksand;
 
   ${(props) =>
-    props.iscompleted &&
+    props.$iscompleted &&
     `
     background-color: #98FB98;
     text-decoration: line-through;

@@ -47,5 +47,4 @@ export const StyledParagraph = styled.p`
   display: flex;
   font-size: 14px;
   width: 100%;
-  padding: 5px;
 `;
