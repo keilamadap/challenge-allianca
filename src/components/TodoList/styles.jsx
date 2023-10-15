@@ -34,18 +34,9 @@ export const Paragraph = styled.p`
   justify-content: center;
   width: 100%;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 10px;
   flex-direction: column-reverse;
   font-size: 15px;
   font-weight: 600;
-`;
-
-export const StyledParagraph = styled.p`
-  font-weight: 600;
-  justify-content: start;
-  display: flex;
-  font-size: 14px;
-  margin-top: 10px;
-  width: 100%;
 `;

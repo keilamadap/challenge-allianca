@@ -31,15 +31,16 @@ const TodoForm = () => {
 
   return (
     <S.Form onSubmit={handleSubmit}>
-      <S.Div>
+      <S.StyledDiv>
         <S.StyledInput
           autoFocus
+          type="text"
           placeholder="Escreva uma tarefa..."
           value={taskInput}
           onChange={(e) => setTaskInput(e.target.value)}
         />
         <S.StyledButton type="submit">Nova Tarefa</S.StyledButton>
-      </S.Div>
+      </S.StyledDiv>
 
       {message &&
         (isSuccess ? (

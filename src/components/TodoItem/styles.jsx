@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
+  flex-direction: column;
   width: 100%;
-  align-items: center;
-  gap: 15px;
   justify-content: center;
-  cursor: pointer;
+  align-items: center;
+  gap: 10px;
 `;
 
 export const StyledInput = styled.input`
@@ -29,4 +29,22 @@ export const StyledInput = styled.input`
     text-decoration-thickness: 2px;
     color: #888;
   `}
+`;
+
+export const StyledDiv = styled.div`
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  cursor: pointer;
+`;
+
+export const TasksCounter = styled.p`
+  font-weight: 600;
+  justify-content: start;
+  display: flex;
+  font-size: 14px;
+  width: 100%;
+  margin-top: 10px;
 `;

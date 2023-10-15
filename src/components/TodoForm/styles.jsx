@@ -47,7 +47,7 @@ export const StyledButton = styled.button`
   }
 `;
 
-export const Div = styled.div`
+export const StyledDiv = styled.div`
   display: flex;
   gap: 10px;
   align-items: center;
