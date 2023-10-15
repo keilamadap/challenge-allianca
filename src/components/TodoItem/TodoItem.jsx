@@ -6,6 +6,32 @@ import { MyContext } from "../../context/MyContext";
 const TodoItem = () => {
   const { tasks, onRemoveTask, onMarkTaskCompleted } = useContext(MyContext);
 
+  const handleTaskItems = (taskList) => {
+    return taskList.map((task) => (
+      <S.StyledDiv key={task.id}>
+        <S.StyledInput
+          value={task.name}
+          disabled
+          $iscompleted={task.isCompleted ? "true" : undefined}
+        />
+        <Icon
+          icon="fluent-mdl2:completed-solid"
+          color={task.isCompleted ? "green" : "gray"}
+          width="30"
+          height="30"
+          onClick={() => onMarkTaskCompleted(task.id)}
+        />
+        <Icon
+          icon="fluent:delete-24-regular"
+          width="30"
+          color="red"
+          height="30"
+          onClick={() => onRemoveTask(task.id)}
+        />
+      </S.StyledDiv>
+    ));
+  };
+
   const newTasks = tasks.filter((task) => !task.isCompleted);
   const completedTasks = tasks.filter((task) => task.isCompleted);
 
@@ -22,59 +48,14 @@ const TodoItem = () => {
   return (
     <S.Container>
       {newTasks.length ? <S.TasksCounter>{newTasksText}</S.TasksCounter> : null}
-
-      {newTasks.map((task) => (
-        <S.StyledDiv key={task.id}>
-          <S.StyledInput
-            value={task.name}
-            disabled
-            $iscompleted={task.isCompleted ? "true" : undefined}
-          />
-          <Icon
-            icon="fluent-mdl2:completed-solid"
-            color={task.isCompleted ? "green" : "gray"}
-            width="30"
-            height="30"
-            onClick={() => onMarkTaskCompleted(task.id)}
-          />
-          <Icon
-            icon="fluent:delete-24-regular"
-            width="30"
-            color="red"
-            height="30"
-            onClick={() => onRemoveTask(task.id)}
-          />
-        </S.StyledDiv>
-      ))}
+      {handleTaskItems(newTasks)}
 
       {completedTasks.length ? (
         <S.TasksCounter>{completedTasksText}</S.TasksCounter>
       ) : null}
-
-      {completedTasks.map((task) => (
-        <S.StyledDiv key={task.id}>
-          <S.StyledInput
-            value={task.name}
-            disabled
-            $iscompleted={task.isCompleted ? "true" : undefined}
-          />
-          <Icon
-            icon="fluent-mdl2:completed-solid"
-            color={task.isCompleted ? "green" : "gray"}
-            width="30"
-            height="30"
-            onClick={() => onMarkTaskCompleted(task.id)}
-          />
-          <Icon
-            icon="fluent:delete-24-regular"
-            width="30"
-            color="red"
-            height="30"
-            onClick={() => onRemoveTask(task.id)}
-          />
-        </S.StyledDiv>
-      ))}
+      {handleTaskItems(completedTasks)}
     </S.Container>
   );
 };
+
 export default TodoItem;
