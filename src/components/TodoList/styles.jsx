@@ -46,5 +46,6 @@ export const StyledParagraph = styled.p`
   justify-content: start;
   display: flex;
   font-size: 14px;
+  margin-top: 10px;
   width: 100%;
 `;
