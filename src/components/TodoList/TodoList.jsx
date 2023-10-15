@@ -24,7 +24,9 @@ const TodoList = () => {
       <S.Title>To Do List</S.Title>
       <TodoForm />
 
-      <S.StyledParagraph>{newTasks[0] && newTasksText}</S.StyledParagraph>
+      <S.StyledParagraph>
+        {newTasks.length ? newTasksText : null}
+      </S.StyledParagraph>
 
       {tasks.length > 0 ? (
         newTasks.map((task) => <TodoItem key={task.id} task={task} />)
@@ -35,9 +37,9 @@ const TodoList = () => {
         </S.Paragraph>
       )}
 
-      {completedTasks[0] && (
+      {completedTasks.length ? (
         <S.StyledParagraph>{completedTasksText}</S.StyledParagraph>
-      )}
+      ) : null}
 
       {completedTasks.map((task) => (
         <TodoItem key={task.id} task={task} />

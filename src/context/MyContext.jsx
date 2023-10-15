@@ -49,6 +49,7 @@ function MyContextProvider({ children }) {
     setTasks(markedTasks);
     localStorage.setItem("tasks", JSON.stringify(markedTasks));
   };
+
   useEffect(() => {
     const storedTasks = localStorage.getItem("tasks");
     if (storedTasks) {

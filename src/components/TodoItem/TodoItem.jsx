@@ -9,9 +9,9 @@ const TodoItem = ({ task }) => {
   return (
     <S.Container>
       <S.StyledInput
-        value={task.name}
+        value={task?.name}
         disabled
-        iscompleted={task.isCompleted ? "true" : undefined}
+        $iscompleted={task.isCompleted ? "true" : undefined}
       />
       <Icon
         icon="fluent-mdl2:completed-solid"
