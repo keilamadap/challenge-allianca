@@ -40,7 +40,7 @@ export const StyledDiv = styled.div`
   cursor: pointer;
 `;
 
-export const TasksCounter = styled.p`
+export const Paragraph = styled.p`
   font-weight: 600;
   justify-content: start;
   display: flex;
