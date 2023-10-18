@@ -3,7 +3,7 @@ import TodoItem from "../TodoItem/TodoItem";
 import TodoForm from "../TodoForm/TodoForm";
 import { useContext } from "react";
 import { MyContext } from "../../context/MyContext";
-import EmptyTasks from "../utils/EmptyTasks";
+import EmptyTasks from "../EmptyTasks/EmptyTasks";
 
 const TodoList = () => {
   const { tasks } = useContext(MyContext);
